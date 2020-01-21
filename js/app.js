@@ -78,6 +78,11 @@ Player.prototype.handleInput(arrowKeyPress){
     }
 };    
 
+Player.prototype.reset(){
+    this.x = 200;
+    this.y = 400;
+};
+
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
