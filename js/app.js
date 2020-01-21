@@ -50,17 +50,18 @@ let Player = function(x, y) {
 // a handleInput() method.
 
 Player.prototype.update = function(dt) {
-  if (this.x > 400) {
-    this.x = 400;
-  }
-  if (this.x < 0) {
-    this.x = 0;
-  }
-  if (this.y < 0) {
-    this.y = 0;
-    setTimeout(() => {
-      player.reset();
-    }, 100);
+  switch (true) {
+    case this.x > 400:
+      this.x = 400;
+      break;
+    case this.x < 0:
+      this.x = 0;
+      break;
+    case this.y < 0:
+      this.y = 0;
+      setTimeout(() => {
+        player.reset();
+      }, 100);
   }
 };
 
