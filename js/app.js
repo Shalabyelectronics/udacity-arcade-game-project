@@ -69,7 +69,7 @@ Player.prototype.update = function(dt) {
 Player.prototype.render = function() {
   ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-
+// Handle the Input sow so when the arrowKeyPress did matched the player will move.
 Player.prototype.handleInput = function(arrowKeyPress) {
   switch (arrowKeyPress) {
     case "up":
