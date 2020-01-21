@@ -70,17 +70,18 @@ Player.prototype.render = function() {
 };
 
 Player.prototype.handleInput = function(arrowKeyPress) {
-  if (arrowKeyPress == "right") {
-    this.x += 101;
-  }
-  if (arrowKeyPress == "left") {
-    this.x -= 101;
-  }
-  if (arrowKeyPress == "up") {
-    this.y -= 84;
-  }
-  if (arrowKeyPress == "down") {
-    this.y += 84;
+  switch (arrowKeyPress) {
+    case "up":
+      this.y -= 84;
+      break;
+    case "down":
+      this.y += 84;
+      break;
+    case "right":
+      this.x += 101;
+      break;
+    case "left":
+      this.x -= 101;
   }
 };
 
