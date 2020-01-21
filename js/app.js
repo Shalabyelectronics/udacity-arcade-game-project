@@ -85,7 +85,7 @@ Player.prototype.handleInput = function(arrowKeyPress) {
       this.x -= 101;
   }
 };
-
+// return the player to the default position.
 Player.prototype.reset = function() {
   this.x = 200;
   this.y = 400;
