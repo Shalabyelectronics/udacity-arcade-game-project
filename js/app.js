@@ -43,6 +43,20 @@ let Player = function(x,y){
     this.x = x;
     this.y =y;
     this.sprite = 'images/char-princess-girl.png';
+};
+
+Player.prototype.update(dt){
+    if (this.x > 400){
+        this.x = 400;
+    }
+    if (this.x < 0){
+        this.x = 0;
+    }
+    if (this.y < 0){
+        this.y = 0;
+        setTimeout(()=>
+        player.reset(), 100);
+    }
 }
 
 // Now instantiate your objects.
