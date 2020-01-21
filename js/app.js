@@ -53,15 +53,30 @@ Player.prototype.update(dt){
         this.x = 0;
     }
     if (this.y < 0){
-        this.y = 0;
+        this.y = 0
         setTimeout(()=>
-        player.reset(), 100);
+        player.reset(), 100)
     }
 };
 
 // Draw the player on the screen, required method for game
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+
+Player.prototype.handleInput(arrowKeyPress){
+    if (arrowKeyPress == 'right'){
+        this.x += 101;
+    }
+    if (arrowKeyPress == 'left'){
+        this.x -= 101;
+    }
+    if (arrowKeyPress == 'up'){
+        this.y -= 84;
+    }
+    if (arrowKeyPress == 'down'){
+        this.y += 84;
+    }
+};    
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
