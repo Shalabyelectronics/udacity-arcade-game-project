@@ -1,22 +1,18 @@
 # Udacity Classic Arcade Game
 This is an arcade game, made for Udacity Frontend Nanodegree project. User can use left, right, up, and down arrow keys to move themself in the board. They need to avoid colliding with the enemies (bugs) and reach the water on the top.
 
-## Table of Contents
+## Demo Link
 
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+* [View the Arcade Game](https://fuadssheerah.github.io/udacity-arcade-game-project/)
 
-## Instructions
+## How to run and play the game
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+* Download the repository by clone it or Download the zip file.
+* Double-click index.html to open the game in your browser.
+* Use the keyboard arrow keys to move the player and avoid the bugs.
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
+## Resources I referred to:
 
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
-# udacity-arcade-game-project
+* [Tutorial Requests: FEND Project 3 Arcade Game - Walk Through](https://www.youtube.com/watch?v=XEVnMgYblGc&t=830s)
+* [Udacity: Classic Arcade Game like Frogger](https://www.youtube.com/watch?v=7PHhRrjgTDA&t=7s)
+* [Project 3 : Arcade Game - Udacity Front-End Nanodegree 2019](https://www.youtube.com/watch?v=eEODI460Eas&t=227s)
