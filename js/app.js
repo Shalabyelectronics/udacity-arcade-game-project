@@ -57,7 +57,11 @@ Player.prototype.update(dt){
         setTimeout(()=>
         player.reset(), 100);
     }
-}
+};
+
+// Draw the player on the screen, required method for game
+Player.prototype.render = function() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
