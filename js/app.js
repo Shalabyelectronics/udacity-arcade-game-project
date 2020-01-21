@@ -86,7 +86,9 @@ Player.prototype.reset(){
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
-
+let allEnemies = [new Enemy(0, 60, 50),
+                  new Enemy(0, 140, 50),
+                  new Enemy(0, 225, 50)  ]
 
 
 // This listens for key presses and sends the keys to your
